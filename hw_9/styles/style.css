@@ -1,0 +1,560 @@
+html {
+    font-size: 10px;
+}
+
+body,
+ul,
+li,
+div {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    padding: 0 5%;
+    background-color: #E5E5E5;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-box-col {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.flex-box-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-box-right {
+    display: flex;
+    justify-content: end;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #171717;
+    padding: 65px 0 30px 0;
+}
+
+.h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 15px 0;
+}
+
+.conteiner {
+    max-width: 2920px;
+    margin: 0 auto;
+    font-style: italic;
+    color: black;
+    font-family: 'Rosario';
+    font-weight: 700;
+    background-color: white;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* ================================================================= */
+
+.header {
+    background-color: #000000;
+}
+
+header>div:first-of-type {
+
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header a {
+    display: inline-block;
+    box-sizing: border-box;
+    color: #FFFCFC;
+    font-size: 2vw;
+}
+
+
+
+.logo {
+    height: 6.5vw;
+    width: 30vw;
+    background-image: url(../images/Group\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: 42.8%;
+}
+
+.nav {
+    width: 55%;
+    padding-right: 2.5%;
+}
+
+.screan-one-flex-box {
+    padding: 2.5%;
+    margin: 0 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.media-section div {
+    margin: 5% 0;
+}
+
+.first-left-animation {
+    position: relative;
+    animation-delay: 1s;
+    animation: first-left-animation 3s linear 1;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+/* ........................................................................................ */
+@keyframes first-left-animation {
+    from {
+        visibility: hidden;
+        left: -50%;
+    }
+
+    to {
+        visibility: visible;
+        left: 0%;
+    }
+}
+
+.first-right-animation {
+    position: relative;
+    animation-delay: 1s;
+    animation: first-right-animation 3s linear 1;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+/* ................................................................................ */
+@keyframes first-right-animation {
+    from {
+        visibility: hidden;
+        right: -50%;
+    }
+
+    to {
+        visibility: visible;
+        right: 0%;
+    }
+}
+
+.second-left-animation {
+    height: 30vw;
+    background-size: cover;
+    position: relative;
+    animation: second-left-animation 2s linear 1;
+    animation-delay: 3.2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+/* ............................................................................... */
+@keyframes second-left-animation {
+    from {
+        visibility: hidden;
+        left: -20%;
+    }
+
+    to {
+        visibility: visible;
+        left: 0%;
+    }
+}
+
+.second-right-animation {
+    height: 30vw;
+    background-size: cover;
+    position: relative;
+    animation: second-right-animation 2s linear 1;
+    animation-delay: 3.2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+/* ..................................................................................... */
+@keyframes second-right-animation {
+    from {
+        visibility: hidden;
+        right: -20%;
+    }
+
+    to {
+        visibility: visible;
+        right: 0%;
+    }
+}
+/* ................................................. */
+.screan__img-box {
+    width: 22vw;
+    height: 20vw;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border-radius: 2vw;
+    background-size: 130%;
+    margin: 1vw;
+}
+
+.up-left-photo {
+    background-image: url(../images/Rectangle\ 20.png);
+}
+
+.down-left-photo {
+    background-image: url(../images/Rectangle\ 25.png);
+    background-size: 165%;
+}
+
+.up-right-photo {
+    background-image: url(../images/Rectangle\ 22.png);
+}
+
+.down-rihgt-photo {
+    background-image: url(../images/Rectangle\ 23.png);
+    background-size: 174%;
+    background-position-x: 87%;
+}
+
+.left-one-photo {
+    background-image: url(../images/Rectangle\ 21.png);
+    height: 29vw;
+}
+
+.right-one-photo {
+    background-image: url(../images/Rectangle\ 24.png);
+    height: 29vw;
+    background-position-x: -3vw;
+}
+
+/* ==================================================================== */
+
+.page2>img {
+    width: 50%;
+}
+
+.page2__left-half>div {
+    display: inline-block;
+}
+
+.page2__text {
+    font-size: 2vw;
+    text-align: center;
+    padding-top: 1vw;
+}
+
+.page2__left-half {
+    width: 45%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.page2__ellipse-box {
+    width: 38%;
+    padding: 2vw;
+}
+
+.ellipse {
+    width: 80%;
+}
+
+/* ................................................................... */
+.animation-one {
+    position: relative;
+    animation: animation-one 20s linear infinite;
+}
+
+@keyframes animation-one {
+
+    from,
+    to {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        top: 0;
+        left: 19.2vw;
+    }
+
+    50% {
+        top: 19.8vw;
+        left: 19.2vw;
+    }
+
+    75% {
+        top: 19.8vw;
+        left: 0;
+    }
+}
+
+/* ..................................................................................... */
+
+.animation-two {
+    position: relative;
+    animation: animation-two 20s linear infinite;
+}
+
+@keyframes animation-two {
+
+    from,
+    to {
+        top: 0;
+        right: 0;
+    }
+
+    25% {
+        top: 19.8vw;
+        right: 0;
+    }
+
+    50% {
+        top: 19.8vw;
+        right: 19.2vw;
+    }
+
+    75% {
+        top: 0;
+        right: 19.2vw;
+    }
+}
+
+/* ............................................................................................ */
+
+.animation-three {
+    position: relative;
+    animation: animation-three 20s linear infinite;
+}
+
+@keyframes animation-three {
+    from,
+    to {
+        bottom: 0;
+        left: 0;
+    }
+
+    25% {
+        bottom: 19.8vw;
+        left: 0;
+    }
+
+    50% {
+        bottom: 19.8vw;
+        left: 19.2vw;
+    }
+
+    75% {
+        bottom: 0;
+        left: 19.2vw;
+    }
+}
+
+/* ........................................................................................ */
+
+.animation-four {
+    position: relative;
+    animation: animation-four 20s linear infinite;
+}
+
+@keyframes animation-four {
+
+    from,
+    to {
+        bottom: 0;
+        right: 0;
+    }
+
+    25% {
+        bottom: 0;
+        right: 19.2vw;
+    }
+
+    50% {
+        bottom: 19.8vw;
+        right: 19.2vw;
+    }
+
+    75% {
+        bottom: 19.8vw;
+        right: 0;
+    }
+}
+
+/* ======================================================================= */
+
+.page3__h1 {
+    text-align: center;
+    font-size: 5vw;
+    font-style: normal;
+    padding: 5vw 0;
+}
+
+.page3>div:last-child {
+    padding: 0 3vw;
+}
+
+.page3 img {
+    width: 18vw;
+    opacity: .8;
+
+}
+
+.page3__card-text {
+
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    position: relative;
+    bottom: 5vw;
+    text-align: center;
+    font-style: normal;
+    font-size: 2vw;
+    color: #FFFAFA;
+    line-height: 5vw;
+    border-radius: 0 0 2vw 2vw;
+    transition: all .5s;
+    visibility: hidden;
+}
+
+.page3 img:hover {
+    /*width: 105%;*/
+    opacity: 1;
+    transition: all 1s;
+}
+
+.page3__content-box:hover .page3__card-text {
+    background: rgba(163, 83, 10, 0.7);
+    visibility: visible;
+}
+
+.page4,
+.footer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.page4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page4__h1 {
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.page4 input,
+textarea {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-style: normal;
+    border: none;
+    font-size: 2vw;
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 1vw;
+    box-sizing: border-box;
+}
+
+textarea {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: 2vw auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+td {
+    padding: 0;
+    margin: 0;
+    border: 2vw solid #E5E5E5;
+    box-sizing: border-box;
+}
+
+.map {
+    width: 35vw;
+    height: 35vw;
+}
+
+.page4__left-content {
+    width: 50%;
+}
+
+/* ===================================================================== */
+
+.footer {
+    padding-top: 4vw;
+}
+
+footer a,
+footer li {
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 1vw;
+}
+
+.footer div {
+    text-align: center;
+}
+
+.footer__span {
+    display: inline-block;
+    padding-bottom: 2vw;
+    font-size: 2vw;
+}
+
+.conect-us {
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+footer .flex-box {
+    align-items: baseline;
+}
+
+footer ul img {
+    padding-right: 0.5vw;
+    height: 1vw;
+}
+
+.footer__li-taleft {
+    padding-left: 3vw;
+    text-align: left;
+}

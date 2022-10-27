@@ -1,0 +1,321 @@
+/* media */
+/* ..................................................................................... */
+
+@media (min-width: 768px) and (max-width: 992px) {
+    
+    .nav {
+        width: 75%;
+    }
+
+
+    .logo {
+        width: 10rem;
+        height: 5rem;
+        background-size: 99%;
+    }
+
+
+    .screan-one-flex-box {
+        display: block;
+    }
+
+    .page1 {
+        height: 170vw;
+    }
+
+    .media-first-box {
+        position: relative;
+        bottom: 76vw;
+    }
+
+    .screan__img-box {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .media-section-left {
+        order: 1;
+    }
+
+    .media-section-right {
+        order: 2;
+    }
+
+    .left-one-photo {
+        display: inline-block;
+        order: 3;
+        height: 75vw;
+        background-position-y: -4vw;
+        position: relative;
+        top: 85vw;
+        left: 1vw;
+    }
+
+    .right-one-photo {
+        display: inline-block;
+        order: 4;
+        height: 75vw;
+        position: relative;
+        left: 43vw;
+        bottom: 76vw;
+    }
+
+    .second-left-animation {
+        animation-duration: 3s;
+        animation-delay: 0s;
+    }
+
+    .second-right-animation {
+        animation-duration: 3s;
+        animation-delay: 0s;
+    }
+
+    /* ....................................................... */
+    @keyframes second-left-animation {
+        from {
+            visibility: hidden;
+            left: -40vw;
+        }
+
+        to {
+            visibility: visible;
+            left: 0vw;
+        }
+    }
+
+    /* ............................................................... */
+    @keyframes second-right-animation {
+        from {
+            visibility: hidden;
+            left: 83vw;
+        }
+
+        to {
+            visibility: visible;
+            left: 42vw;
+        }
+    }
+
+    .page2 {
+        display: block;
+        text-align: center;
+    }
+
+    .page2>img {
+        position: relative;
+        bottom: 65vw;
+        width: 80%;
+    }
+
+    .page2__left-half {
+        width: 80%;
+        position: relative;
+        top: 80vw;
+    }
+
+    .page2__text {
+        font-size: 3vw;
+    }
+
+    /* ......................................................... */
+    .animation-one {
+        animation: animation-one 15s linear infinite;
+    }
+
+    @keyframes animation-one {
+
+        from,
+        to {
+            top: 0;
+            left: 0;
+        }
+
+        25% {
+            top: 0;
+            left: 32vw;
+        }
+
+        50% {
+            top: 29.8vw;
+            left: 32vw;
+        }
+
+        75% {
+            top: 29.8vw;
+            left: 0;
+        }
+    }
+
+    /* ....................................... */
+    .animation-two {
+        animation: animation-two 15s linear infinite;
+    }
+
+    @keyframes animation-two {
+
+        from,
+        to {
+            top: 0;
+            right: 0;
+        }
+
+        25% {
+            top: 29.8vw;
+            right: 0;
+        }
+
+        50% {
+            top: 29.8vw;
+            right: 32vw;
+        }
+
+        75% {
+            top: 0;
+            right: 32vw;
+        }
+    }
+
+    /* ............................................. */
+
+    .animation-three {
+        animation: animation-three 15s linear infinite;
+    }
+
+    @keyframes animation-three {
+
+        from,
+        to {
+            bottom: 0;
+            left: 0;
+        }
+
+        25% {
+            bottom: 29.8vw;
+            left: 0;
+        }
+
+        50% {
+            bottom: 29.8vw;
+            left: 32vw;
+        }
+
+        75% {
+            bottom: 0;
+            left: 32vw;
+        }
+    }
+
+    /* ....................................................... */
+    .animation-four {
+        animation: animation-four 15s linear infinite;
+    }
+
+    @keyframes animation-four {
+
+        from,
+        to {
+            bottom: 0;
+            right: 0;
+
+        }
+
+        25% {
+            bottom: 0;
+            right: 32vw;
+        }
+
+        50% {
+            bottom: 29.8vw;
+            right: 32vw;
+        }
+
+        75% {
+            bottom: 29.8vw;
+            right: 0;
+        }
+    }
+
+    .page3__media-box {
+        display: block;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .page3__content-box {
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 1vw;
+    }
+
+    .page3__content-box img {
+        width: 38vw;
+        height: 70vw;
+    }
+
+    .page3__card-text {
+        /* тут почемуто изза bottom или line-height появляется растояние между верхними и нижними фото  */
+        position: relative;
+        font-size: 3vw;
+        bottom: 10vw;
+        height: 10vw;
+        line-height: 10vw;
+        border-radius: 0 0 4vw 4vw;
+    }
+
+    .page4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page4 div {
+        width: 100%;
+    }
+
+    .page4__h1 {
+        font-size: 3vw;
+    }
+
+    .page4__left-content input {
+        height: 5vw;
+    }
+
+    .page4__left-content textarea {
+        height: 20vw;
+    }
+
+    .map {
+        text-align: center;
+        width: 79vw;
+        height: 40vw;
+    }
+
+    footer a,
+    footer li {
+        font-size: 2.5vw;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .footer__li-taleft {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    div.footer>div {
+        margin: 2rem 0px;
+    }
+
+    .footer__span {
+        font-size: 2.5vw;
+        padding: 0;
+    }
+
+    .conect-us {
+        font-size: 2.5vw;
+    }
+}

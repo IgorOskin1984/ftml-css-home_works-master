@@ -1,0 +1,277 @@
+html {
+    font-size: 10px;
+}
+
+/*body,
+ul,
+li,*/
+div {
+    margin: 0;
+    padding: 0;
+    /*list-style: none;*/
+
+}
+
+body {
+    padding: 0 5%;
+    background-color: #E5E5E5;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-box-col {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.flex-box-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-box-right {
+    display: flex;
+    justify-content: end;
+}
+
+.conteiner {
+    width: 100%;
+    background-color: #FFB084;
+    border-radius: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 2vw 4vw;
+
+    font-family: 'Work Sans';
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.grid div {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.grid .users-data,
+.bio,
+.big-text,
+.personality {
+    box-shadow: 7px 7px 0px #000000;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 1vw;
+}
+
+.users-data {
+    grid-row: 1/6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.users-data li {
+    list-style: none;
+}
+
+.users-data span {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.users-data__h1 {
+    text-align: center;
+    padding: 2vw 0;
+    font-size: 24px;
+    line-height: 4vw;
+    font-weight: 700;
+}
+
+.users-data img {
+    height: 20vw;
+}
+
+.bio {
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+
+.bio li {
+    list-style: none;
+
+}
+
+.grid .goals {
+    grid-row: 3/5;
+    box-shadow: 7px 7px 0px #29A71E;
+}
+
+.goals span {
+    color: #29A71E;
+}
+
+.grid .frustrations {
+    grid-row: 3 / 6;
+    box-shadow: 7px 7px 0px #E13535;
+}
+
+.frustrations span {
+    color: #E13535;
+}
+
+.grid .dream-companies {
+    grid-column: 2;
+    grid-row: 5/7;
+    box-shadow: 7px 7px 0px #3675B0;
+}
+
+.dream-companies span {
+    color: #3675B0;
+}
+
+.big-text {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 3vw;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.personality {}
+
+.grid ul span {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+@media screen and (max-width:768px) {
+
+    .conteiner {
+        padding: 2vw 4vw;
+
+        font-family: 'Work Sans';
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        gap: 20px;
+    }
+
+    .grid div {
+        width: 100%;
+    }
+
+    .users-data {
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bio {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .grid .goals {
+        grid-row: 4;
+    }
+
+    .grid .frustrations {
+        grid-row: 5;
+    }
+
+    .grid .dream-companies {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    .big-text {
+        box-sizing: border-box;
+        text-align: center;
+        padding: 0 3vw;
+        grid-row: 2;
+        font-size: 36px;
+        line-height: 10vw;
+    }
+}
+
+@media (min-width:768px) and (max-width:1000px) {
+    .conteiner {
+        /*transition: all 1s;*/
+        padding: 2vw 4vw;
+
+        font-family: 'Work Sans';
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        /*grid-template-rows: repeat(7, 100px);*/
+        gap: 20px;
+    }
+
+    .grid div {
+        width: 100%;
+    }
+
+    .users-data {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .big-text {
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .bio {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .grid .goals {
+        grid-row: 4;
+    }
+
+    .grid .frustrations {
+        grid-row: 4;
+        grid-column: 2;
+    }
+
+    .grid .dream-companies {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+}

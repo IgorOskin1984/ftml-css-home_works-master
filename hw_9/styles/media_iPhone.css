@@ -1,0 +1,260 @@
+/* media */
+/* ................................................................................ */
+@media screen and (max-width:767px) {
+    .screan-one-flex-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .screan__img-box {
+
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .media-first-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-left-animation {
+        animation-delay: 0s;
+        animation-duration: 3s;
+    }
+
+    .second-right-animation {
+        animation-delay: 0s;
+        animation-duration: 3s;
+    }
+
+    .down-left-photo {
+        background-size: 174%;
+        background-position-x: -1vw;
+        background-position-y: -5vw;
+        position: relative;
+        top: 84vw;
+    }
+
+    .down-rihgt-photo {
+        background-size: 174%;
+        position: relative;
+        top: 3vw;
+    }
+
+    .up-right-photo {
+        background-position-x: -8vw;
+        background-size: 120%;
+        position: relative;
+        bottom: 81vw;
+    }
+
+    .right-one-photo {
+        background-size: 110%;
+        background-position-y: -10vw;
+        order: 0;
+    }
+
+    .left-one-photo {
+        position: relative;
+        top: 4vw;
+        order: 2;
+        background-size: 110%;
+        background-position-y: -10vw;
+    }
+
+    .media-first-box {
+        order: 1;
+    }
+
+    .page2>img {
+        display: none;
+    }
+
+    .page2__left-half {
+        width: 100%;
+        padding-top: 3vw;
+    }
+
+    .page2__text {
+        font-size: 4vw;
+    }
+
+    /* ................................................................................. */
+    .animation-one {
+        animation: animation-one 10s linear infinite;
+    }
+
+    @keyframes animation-one {
+
+        from,
+        to {
+            top: 0;
+            left: 0;
+        }
+
+        25% {
+            top: 0;
+            left: 38.5vw;
+        }
+
+        50% {
+            top: 37.4vw;
+            left: 38.5vw;
+        }
+
+        75% {
+            top: 37.4vw;
+            left: 0;
+        }
+    }
+
+    /* ....................................................................................... */
+    .animation-two {
+        animation: animation-two 10s linear infinite;
+    }
+
+    @keyframes animation-two {
+
+        from,
+        to {
+            top: 0;
+            right: 0;
+        }
+
+        25% {
+            top: 37.4vw;
+            right: 0;
+        }
+
+        50% {
+            top: 37.4vw;
+            right: 38.5vw;
+        }
+
+        75% {
+            top: 0;
+            right: 38.5vw;
+        }
+    }
+
+    /* ........................................................................ */
+    .animation-three {
+        animation: animation-three 10s linear infinite;
+    }
+
+    @keyframes animation-three {
+
+        from,
+        to {
+            bottom: 0;
+            left: 0;
+        }
+
+        25% {
+            bottom: 37.4vw;
+            left: 0;
+        }
+
+        50% {
+            bottom: 37.4vw;
+            left: 38.5vw;
+        }
+
+        75% {
+            bottom: 0;
+            left: 38.5vw;
+        }
+    }
+
+    /* ....................................................................................... */
+    .animation-four {
+        animation: animation-four 10s linear infinite;
+    }
+
+    @keyframes animation-four {
+
+        from,
+        to {
+            bottom: 0;
+            right: 0;
+        }
+
+        25% {
+            bottom: 0;
+            right: 38.5vw;
+        }
+
+        50% {
+            bottom: 37.4vw;
+            right: 38.5vw;
+        }
+
+        75% {
+            bottom: 37.4vw;
+            right: 0;
+        }
+    }
+
+
+    .page3__media-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page3__content-box {
+        width: 90%;
+    }
+
+    .page3__content-box:hover .page3__card-text {
+        visibility: visible;
+    }
+
+    .page3__card-text {
+        transition: all 1s;
+        position: relative;
+        bottom: 16vw;
+        border-radius: 0 0 8vw 8vw;
+        height: 16vw;
+        line-height: 16vw;
+        font-size: 10vw;
+    }
+
+    .page3__content-box img {
+        width: 100%;
+    }
+
+
+    .page4 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between
+    }
+
+    .page4__h1 {
+        padding: 5vw 0;
+        font-size: 5vw;
+    }
+
+    .map {
+        width: 100%;
+        height: 60vw;
+    }
+
+    .page4__left-content {
+        width: 100%;
+    }
+
+    footer a,
+    footer li {
+        font-size: 2vw;
+    }
+
+    .footer__span {
+        font-size: 3vw;
+    }
+
+    .conect-us {
+        font-size: 2vw;
+    }
+}
+

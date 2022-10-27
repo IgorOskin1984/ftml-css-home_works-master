@@ -1,0 +1,10 @@
+body{
+    max-width: 789px;
+    margin: 0 auto;
+}
+.bold {
+    font-weight: 700;
+}
+.blue{
+    color: blue;
+}

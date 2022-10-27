@@ -1,0 +1,215 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    background-color: darkgray;
+}
+div{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 700;
+    color: #353C57;
+}
+.conteiner{
+    margin: 0 auto;
+    width: 1920px;
+    height: 10000px;
+}
+.header{
+    width: 100%;
+    height: 229px;
+}
+.up-header{
+    background-color: #202846;
+    width: 100%;
+    height: 90px;
+    padding-top: 2px;
+}
+.logo-link{
+    display: inline-block;
+    height: 70px;
+    width: 178px;
+    margin-left: 138px;
+    background-image: url(/images/photo_2021-09-21_13-25-38\ 2.svg);
+    background-size: 100%;
+}
+.list-conteiner{
+    display: inline-block;
+    margin-left: 19%;
+    font-size: 24px;
+}
+.list-box{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    bottom: 25px;
+    text-align: center;
+    margin: auto;
+    line-height: 100%;
+}
+.anoter{
+    position: relative;
+    overflow: hidden;
+    bottom: 11px;
+    width: 200px;
+}
+.anoter2{
+    position: relative;
+    overflow: hidden;
+    bottom: 0px;
+    border: none;
+}
+.wert-line{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 31px;
+    width: 59px;
+    height: 0;
+    border: 2px solid #FFFFFF;
+    filter: blur(1px);
+    transform: rotate(90deg);
+}
+.down-header{
+    width: 100%;
+    height: 140px;
+    line-height: 140px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 48px;
+    background-color: #C6C6DC;
+    padding-left: 227px;
+}
+.down-header > a{
+    color: #202846;
+}
+.main{
+    position: relative;
+    overflow: auto;
+    height: 1580px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #E5E5E5;
+    padding-top: 185px;
+}
+.main-conteiner{
+    width: 1489px;
+    height: 1308px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.main-conteiner_content-box{
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #BDBDC6;
+    margin-bottom: 36px;
+}
+.first-img{
+    display: inline-block;
+    margin-top: 28px;
+    margin-left: 103px;
+}
+.content-box_text{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    bottom: 33px;
+    left: 102px;
+}
+.content-box_text hr{
+    border: 3px solid #FFFFFF;
+}
+.text-conteiner{
+    display: inline-block;
+    width: 712px;
+    height: 160px;
+    background-color: #D7D7DD;
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.button{
+    width: 200px;
+    height: 60px;
+    box-sizing: border-box;
+    background-color: #202846;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 60px;
+
+    position: relative;
+    overflow: hidden;
+    float: right;
+    bottom: 15%;
+    left: 4%;
+    
+}
+
+.star{
+    position: relative;
+    overflow: hidden;
+    float: right;
+    width: 50px;
+    height: 50px;
+    margin: 17px;
+    background-color: white;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.hover1:hover .star{
+    background-color: yellow;
+}
+.hover2:hover .star{
+    background-color: yellow;
+}
+.hover3:hover .star{
+    background-color: yellow;
+}
+.hover4:hover .star{
+    background-color: yellow;
+}
+.footer{
+    padding-left: 120px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 36px;
+    color: #EEECF1;
+    line-height: 90px;
+}
+/* position fixed розиционируется относительно края экрана, а не от родителя.
+этот блок делал в конце и узнал об этом свойстве тоже в конце.
+переделывть нету сил
+оставил этот вопрос не закрытым */
+.fixed{
+    display: inline-block;
+    position: fixed;
+    bottom: 0px;
+    right: 7.5%;
+    width: 500px;
+    height: 500px;
+    background-image: url(/images/Component\ 10.png);
+    background-size: 100%;
+}

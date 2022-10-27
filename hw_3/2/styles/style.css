@@ -1,0 +1,134 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #E5E5E5;
+    
+}
+.main{
+    width: 3500px;
+    margin: 0 auto;
+}
+.conteiner{
+    width: 1224px;
+    height: 512px;
+    margin-top: 50px;
+}
+.conteiner-dia{
+    width: 3024px;
+    height: 512px;
+    margin-top: 50px;
+}
+.box {
+    width: 512px;
+    height: 512px;
+    background-color: white;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.left-yellow{
+    height: 50%;
+    background-color: #FFCE22;
+}
+.left-blue{
+    height: 50%;
+    background-color: #2137FC;
+}
+.line{
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/images/Glyph.png);
+    background-size: 75%;
+}
+.second-line{
+    background-position: 50% 80%;
+}
+.right{
+    margin-left: 100px;
+    box-sizing: border-box;
+}
+.right-blue{
+    height: 45%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    background-color: #2137FC;
+    border-radius: 500px 500px 0 0;
+}
+.right-yellow{
+    height: 45%;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    background-color: #FFCE22;
+    border-radius: 0 0 500px 500px;
+}
+.romb{
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/images/Group.png);
+    background-size: 55%;
+}
+.romb-left{
+    background-position: left;
+}
+.telegram-logo{
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 100%;
+    background-image: url(/images/Plane.png);
+    background-size: 55%;
+}
+.r-logo{
+    background-position: center;
+}
+.dia{
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/images/Vector.png);
+    background-size: 70%;
+}
+.dia-black{
+    margin-left: 100px;
+    box-sizing: border-box;
+    background-color: black;
+}
+.flag{
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/Flag.png);
+    background-repeat: no-repeat;
+    
+}
+.first{
+    background-position-x: 50%;
+    background-position-y: 90%;
+}
+.second{
+    background-position-x: 10%;
+    background-position-y: 10%;
+}
+.repeat{
+    box-sizing: border-box;
+    background-image: url(/images/Flag.png), url(/images/Flag.png);
+    background-repeat: no-repeat;
+    background-position: top left, top right;
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+}
+

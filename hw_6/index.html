@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post">
+        <div class="form-conteiner">
+            <div class="h1">Intake Main Flow</div>
+            <div class="coment">* Mandatory field</div>
+            <div class="h2">Information</div>
+
+            <div class="form-conteiner__section flex-box">
+                <div class="form-conteiner__subsection flex-box-col">
+
+                    <div class="inputbox">
+                        <label for="select">Intake Type<span class="red">* (select)</span></label>
+                        <select name="IntakeType" id="select" required>
+                            <option disabled selected value="Referral">Referral</option>
+                            <option value="ex1">exempie 1</option>
+                            <option value="ex2">exempie 2</option>
+                        </select>
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="tel">phone</label>
+                        <input id="tel" type="tel">
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="email">email</label>
+                        <input id="email" type="email">
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="select-app">Intake Type<span class="red">* (select)</span></label>
+                        <select name="IntakeType" id="select-app">
+                            <option value="APP0000116">APP0000116</option>
+                            <!-- Как сделать значение оптион синим цветом?? -->
+                            <option value="ex1-select-app">example 1</option>
+                            <option value="ex2-select-app">example 2</option>
+                        </select>
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="date">Additional Information Requested Date (Optional)</label>
+                        <input id="date" value="2022-05-01" type="date">
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="number">Remaining Days Before Referral is Purged (Optional)</label>
+                        <input id="number" type="number" min="0" max="31" placeholder="1">
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="datetime-local">Additional Information Requested Date (Optional)</label>
+                        <input id="datetime-local" value="2022-02-02" type="date">
+                    </div>
+
+                </div>
+
+                <div class="form-conteiner__subsection flex-box-col">
+
+                    <div class="inputbox">
+                        <label for="date-info">Additional Information Requested Date (Optional)</label>
+                        <input disabled id="date-info" type="date">
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="app-cat">Application Category*</label>
+                        <select name="app-cat" id="app-cat" required>
+                            <option selected value="Child Support">Child Support</option>
+                            <option value="ex-app-cat">example 1</option>
+                            <option value="ex-app-cat">example 2</option>
+                        </select>
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="date-sub">Enrollment Submission Date (Optional)</label>
+                        <input disabled id="date-sub" type="date">
+                    </div>
+
+                    <div class="inputbox hidden">
+                        <label class="none" for="date-sub">Enrollment</label>
+                        <input class="none" disabled id="date-sub" type="text">
+                    </div>
+
+                    <div class="inputbox">
+                        <input class="auto" id="Purged" type="checkbox">
+                        <label class="purged" for="Purged">Purged</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="Paternity">Exempt from Paternity (Optional) (select)</label>
+                        <select name="no" id="Paternity">
+                            <option value="no">No</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="Status">Enrollment Status (Optional)</label>
+                        <select name="no" id="Status">
+                            <option value="l1">Worklisted</option>
+                            <option value="l2">Enother</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <input class="auto" type="checkbox" id="app-pro">
+            <label class="dib" for="app-pro">Application Fee Processed</label>
+
+            <hr>
+
+            <div class="h2">Maternity Information</div>
+
+            <div class="form-conteiner__section flex-box">
+
+                <div class="form-conteiner__subsection">
+                    <div class="inputbox flex-box-center">
+                        <input class="auto" type="checkbox" id="rec">
+                        <label for="rec">Are you requesting child support services for an unborn child?</label>
+                    </div>
+                </div>
+
+                <div class="form-conteiner__subsection">
+                    <div class="inputbox">
+                        <label for="parent">Other known biological parent? (Optional)?</label>
+                        <select id="parent">
+                            <option selected value="None">None</option>
+                            <option value="yesss">example 1</option>
+                            <option value="yesss">example 2</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <hr>
+
+
+
+            <div class="form-conteiner__section flex-box">
+
+                <div class="form-conteiner__subsection flex-box-col">
+
+                    <div class="inputbox">
+                        <label for="Category">Case Category (Optional)</label>
+                        <select id="Category">
+                            <option selected value="Category">Active IV-A</option>
+                            <option value="Category">exempie 1</option>
+                            <option value="Category">exempie 2</option>
+                        </select>
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="Indicator">Arrears Only Indicator (Optional)</label>
+                        <select id="Indicator">
+                            <option disabled selected value="Indicator">None</option>
+                            <option value="Indicator">example 1</option>
+                            <option value="Indicator">example 2</option>
+                        </select>
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="County">Assigned County of Ownership (Optional)</label>
+                        <select id="County">
+                            <option disabled selected value="County">None</option>
+                            <option value="County">example 1</option>
+                            <option value="County">example 2</option>
+                        </select>
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="Status">Intergovermental Case Status (Optional)</label>
+                        <select id="Status">
+                            <option disabled selected value="Status">None</option>
+                            <option value="Status">example 1</option>
+                            <option value="Status">example 2</option>
+                        </select>
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="Handling">Special Handling Indicator for Applicant (Optional)</label>
+                        <select id="Handling">
+                            <option value="Handling">None</option>
+                            <option value="Handling">example 1</option>
+                            <option value="Handling">example 2</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+                <div class="form-conteiner__subsection flex-box-col">
+
+                    <div class="inputbox">
+                        <label for="IV-D">IV-D Indicator*</label>
+                        <select id="IV-D">
+                            <option selected value="IV-D">Non-IV-D</option>
+                            <option value="IV-D">exempie 1</option>
+                            <option value="IV-D">exempie 2</option>
+                        </select>
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="Intergovernmental">Intergovernmental Case Category (Optional)</label>
+                        <select id="Intergovernmental">
+                            <option disabled selected value="Intergovernmental">None</option>
+                            <option value="Intergovernmental">example 1</option>
+                            <option value="Intergovernmental">example 2</option>
+                        </select>
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="Case-Type">Intergovernmental Case Type (Optional)</label>
+                        <select id="Case-Type">
+                            <option disabled selected value="Case-Type">None</option>
+                            <option value="Case-Type">example 1</option>
+                            <option value="Case-Type">example 2</option>
+                        </select>
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="Case-Number">Case Number</label>
+                        <input type="text" placeholder=" Search Case Number" list="Case-Number" id="Case-Number">
+                        <datalist id="Case-Number">
+                            <option value="Case-Number">Case-Number</option>
+                            <option value="Оболонь">
+                            <option value="Минская">
+                            <option value="Героев Днепра">
+                        </datalist>
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="Referral-Number">Referral Number</label>
+                        <input type="text" id="Referral-Number" placeholder="Search Referral Number" list="choice">
+                        <datalist id="choice">
+                            <option value="Search Referral Number">
+                            <option value="Теремки">
+                            <option value="Иподром">
+                        </datalist>
+                    </div>
+                </div>
+            </div>
+
+            <div class="width50">
+                <label for="Special-Handling">Special Handling Indicator for Other Parent (Optional)</label>
+                <select id="Special-Handling">
+                    <option disabled selected value="None">None</option>
+                    <option value="Intergovernmental">example 1</option>
+                    <option value="Intergovernmental">example 2</option>
+                </select>
+            </div>
+
+            <hr>
+
+            <div class="h2">System Information</div>
+
+            <div class="form-conteiner__section flex-box">
+
+                <div class="form-conteiner__subsection flex-box-col">
+
+                    <div class="inputbox">
+                        <label for="Enrollment">Enrollment Taken by User (Optional)</label>
+                        <input class="search" type="text" id="Enrollment" placeholder="Search Input"
+                            list="Enrollment-Taken-by-User">
+                        <datalist id="Enrollment-Taken-by-User">
+                            <option value="Enrollment Taken by User">
+                            <option value="val1"></option>
+                            <option value="val2"></option>
+                        </datalist>
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="Worker">Worker (Optional)</label>
+                        <input class="search" type="text" id="Worker" placeholder="Search Input" list="Worker-search">
+                        <datalist id="Worker-search">
+                            <option value="Worker-search"></option>
+                            <option value="Оболонь">
+                            <option value="Минская">
+                            <option value="Героев Днепра">
+                        </datalist>
+                    </div>
+                </div>
+
+                <div class="form-conteiner__subsection flex-box-col">
+
+                    <div class="inputbox">
+                        <label for="Intake-Supervisor">Intake Supervisor (Optional)</label>
+                        <input class="search" type="search" id="Intake-Supervisor" placeholder="Search">
+
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="Owner">Owner (Optional)</label>
+                        <input class="color search" type="search" id="Owner" placeholder="Rajaneesh Banal">
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="flex-box-right"><input class="button" type="button" value="Next"></div>
+        </div>
+
+    </form>
+</body>
+
+</html>
